@@ -1,4 +1,4 @@
-# Money Passbook — deploy & build APK
+# Artha — deploy & build APK
 
 This folder is a complete, self-contained web app (no build step needed to run it).
 It saves your data locally on the device using IndexedDB — works fully offline once loaded.
@@ -32,8 +32,8 @@ It saves your data locally on the device using IndexedDB — works fully offline
 
 - Every person who installs this gets their **own private data** on their own device —
   nothing is synced or shared between installs.
-- If you edit the dashboard again later, re-run the export, re-upload the changed files
-  to the same GitHub repo (overwriting), and GitHub Pages updates automatically. You'd
-  only need to regenerate the APK if you want existing installs to get the update
-  immediately — otherwise the installed app keeps working with the old version until
-  reinstalled.
+- The app starts completely blank — no sample data baked in. Each person's entries save
+  to their own device the moment they add something.
+- Updating files here (re-upload to the same GitHub repo) auto-updates the live site
+  within a minute. Anyone with the app already open will get the new version next time
+  they're online, thanks to the network-first service worker.
