@@ -3,19 +3,18 @@
 This folder is a complete, self-contained web app (no build step needed to run it).
 It saves your data locally on the device using IndexedDB — works fully offline once loaded.
 
-## Step 1 — Host it on GitHub Pages
+## Deploying updates
 
-1. Go to your existing repo (or create one), upload every file from this folder
-   (`index.html`, `bundle.js`, `manifest.json`, `service-worker.js`, `icon-192.png`,
-   `icon-512.png`) to the repo root, overwriting the old ones.
-2. Give GitHub Pages a minute to redeploy.
-3. Open the site in Incognito/Private mode first to confirm the new version is live
-   before checking your regular tab (which may still show a cached version until you
-   clear its site data once).
+Upload every file from this folder to your GitHub Pages repo root, overwriting the old
+ones. Give it a minute to redeploy, then check in Incognito first (your regular tab may
+show a cached version until you clear its site data once).
 
-## Notes
+## Backup & export (new)
 
-- Every person who installs this gets their own private data on their own device.
-- The app starts completely blank for anyone new — no sample data baked in.
-- Family's "Pranay" income item (if linked) auto-syncs to Personal's total income —
-  no manual update needed there going forward.
+Drawer (☰) → Backup & export:
+- **Full backup (.json)** — everything, both books, restorable. Do this regularly; there's
+  no cloud sync, so this file is the only real insurance against a lost or reset phone.
+- **Restore from a backup file** — replaces all current data with the file's contents.
+  Asks for confirmation first since it can't be undone.
+- **Transactions CSV** — every logged income/expense entry, for opening in Excel or Sheets.
+  One-way export only.
